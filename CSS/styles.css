@@ -82,6 +82,22 @@ table {
     margin: 0;
   }
 
+  thead th:nth-child(1) {
+    width: 33%
+  }
+  thead th:nth-child(2) {
+    width: 33%
+  }
+  thead th:nth-child(3) {
+    width: 33%
+  }
+  
+  thead, tfoot {
+    background-color: coral;
+  }
+  tbody {
+    text-align: center;
+  }
 /*******************shape experiment********/
 
 .shape-container {
