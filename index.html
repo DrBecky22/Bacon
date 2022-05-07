@@ -1,173 +1,80 @@
-body {
-  margin: 0;
-}
+<!DOCTYPE html>
+<html>
 
-h1 {
-  color: red;
-  text-align: center;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Bacon Fansite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-#heading {
-  color: purple;
-}
+<body>
+    <h1 id="heading">I Love Bacon</h1>
+    <div class="bacon-prayer">
+    <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
+    <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
+    <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
+    </div>
+    
+   <div class="food-cards">
+    <div class="card1">
+      <img class="bacon circular" src="	https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/bacon_1f953.png" alt="baon-img">
+      <div class="food-info">
+       <h3>The Glories of Bacon</h3>
+       <p>bacon tastes good</p>
+       <p>cholesterol</p>
+       <p>makes people happy</p>
+      </div>
+     </div>
+    
+    <div class="card2">
+    <img class="broccoli circular" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/broccoli_1f966.png" alt="broccoli-img">
+     <div class="food-info">
+       <h3>The Glories of Broccoli</h3>
+       <p>broccoli tastes good</p>
+       <p>balances hormones</p>
+       <p>fights cancer</p>
+     </div>
+    </div>
 
+    <div class="table">
+        <table>
+          <caption class="table-caption"><h3>List of Other Great Foods</h3></caption>
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>What's to love</th>
+              <th>Cautions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bacon</td>
+              <td>salty fatty goodness</td>
+              <td>toxic arteries</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>broccoli</td>
+              <td>hormone balance</td>
+              <td>sulfur gas</td>
+            </tr>
+            <tr>
+              <td>rutabega</td>
+              <td>the name</td>
+              <td>hard to chop</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-.bacon-prayer {
-  text-align: center;
-  box-sizing: border-box;
-  border: 10px solid black;
-  margin: auto;
-}
-
-.food-cards {
-  border: 5px solid black;
-  padding: 0;
-  margin: 20px;
-  display: flex;
-  width: min-max (300px 1fr); 
-}
-
-.food-info {
-  border: 2px solid black;
-}
-
-img:hover {
-  background-color: gold;
-}
-
-.bacon {
-  background-color: chartreuse;
-}
-
-.broccoli {
-  background-color: crimson;
-}
-
-.circular {
-  border: 5px solid black;
-  /* border-radius: 50%; */
-  padding: 60px;
-  margin: 20px;
-  transform: rotate(14deg);
-}
-
-table {
-  table-layout: fixed;
-  /* border-collapse: collapse; */
-  border: 3px solid purple;
-  margin: 5px auto 20px auto;
-}
-
-  .table {
-  padding: auto;
-  background: peach;
-  border: 3px solid purple;
-  text-items: center;  
-}  
-
-caption {
-  color: purple;
-  padding: 0px;
-}
-
-.table-caption h3 {
-  /*line-spacing: .25em; */
-  margin: 0;
-}
-
-thead th:nth-child(1) {
-  width: 33%
-}
-thead th:nth-child(2) {
-  width: 33%
-}
-thead th:nth-child(3) {
-  width: 33%
-}
-
-thead, tfoot {
-  background-color: coral;
-}
-tbody {
-  text-align: center;
-}
-
-.shape-container {
-  border: solid blue;
-}
-
-.rectangle {
-  height: 100px;
-  width: 100px;
-  background: slateblue;
-  border: 5px solid black; 
- /* border-radius: 45% 45% 0 0%; */
-  margin: 20px;
-}
-
-.circle {
-  height: 100px;
-  width: 150px;
-  border-radius: 50%;
-  background: orchid;
- /* border: 5px solid black;*/
-  margin: 20px;
-}
-
-.round-irregular {
-  height: 100px;
-  width: 100px;
-  border-radius: 10% 66%;
-  background: darkviolet;
- /* border: 5px solid black;  */
-  margin: 20px;
-}
-
-.triangle-group {
-  height: 0;
-  width: 0;
-  /*border-radius: 50%; 
-  background: purple;*/
-  border-top: 50px solid purple;
-  border-right: 10px solid indigo;
-  border-bottom:  50px solid violet;
-  border-left: 100px solid slateblue;
-  margin: 20px;
-}
-
-.cool-thing-that-happened {
-  height: 100px;
-  width: 100px;
-  border-radius: 10% 66%;
-  background: mediumslateblue;
-  border-top: 50px solid purple;
-  border-right: 50px solid indigo;
-  border-bottom:  50px solid violet;
-  border-left: 50px solid slateblue;
-  margin: 20px;
-}
-
-.triangle-1 {
-  height: 0px;
-  width: 0px;
-  /*border-radius: 50%; 
-  background: purple;*/
-  border-top: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 50px solid rebeccapurple;
-  margin: 20px;
-}
-
-.triangle-2 {
-  height: 0px;
-  width: 0px;
-  /*border-radius: 50%; 
-  background: purple;*/
-  border-top: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid darkviolet;
-  border-left: 50px solid transparent;
-  transform: rotate(15deg);
-  margin: 20px;
-}
+      <div class="shape-container">
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+        <div class="round-irregular"></div>
+        <div class="cool-thing-that-happened"></div>
+        <div class="triangle-group"></div>
+        <div class="triangle-1"></div>
+        <div class="triangle-2"></div>
+        </div>
+      </body>
+</html>
