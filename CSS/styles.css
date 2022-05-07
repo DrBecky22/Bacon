@@ -1,39 +1,173 @@
-/******************** Tag Selectors ********************/
-
-body {background-color: seashell;}
+body {
+  margin: 0;
+}
 
 h1 {
-  color :red;
-  font-size: 80px;
+  color: red;
+  text-align: center;
+}
+
+#heading {
+  color: purple;
 }
 
 
-img:hover {background-color: gold; }
-
-div {
-  display: inline-block;
-  position: relative;
-  background-color: slateblue;
-  height: 300px;
-  width: 400px;
+.bacon-prayer {
+  text-align: center;
+  box-sizing: border-box;
+  border: 10px solid black;
+  margin: auto;
 }
-/******************** Class Selectors ********************/
+
+.food-cards {
+  border: 5px solid black;
+  padding: 0;
+  margin: 20px;
+  display: flex;
+  width: min-max (300px 1fr); 
+}
+
+.food-info {
+  border: 2px solid black;
+}
+
+img:hover {
+  background-color: gold;
+}
 
 .bacon {
-  background-color: green;
+  background-color: chartreuse;
 }
 
 .broccoli {
-  background-color: red;
+  background-color: crimson;
 }
 
 .circular {
-  border-radius: 100%;
+  border: 5px solid black;
+  /* border-radius: 50%; */
+  padding: 60px;
+  margin: 20px;
+  transform: rotate(14deg);
 }
 
+table {
+  table-layout: fixed;
+  /* border-collapse: collapse; */
+  border: 3px solid purple;
+  margin: 5px auto 20px auto;
+}
 
-/******************** ID Selectors ********************/
+  .table {
+  padding: auto;
+  background: peach;
+  border: 3px solid purple;
+  text-items: center;  
+}  
 
-#heading {
-  background-color: blue;
-  }
+caption {
+  color: purple;
+  padding: 0px;
+}
+
+.table-caption h3 {
+  /*line-spacing: .25em; */
+  margin: 0;
+}
+
+thead th:nth-child(1) {
+  width: 33%
+}
+thead th:nth-child(2) {
+  width: 33%
+}
+thead th:nth-child(3) {
+  width: 33%
+}
+
+thead, tfoot {
+  background-color: coral;
+}
+tbody {
+  text-align: center;
+}
+
+.shape-container {
+  border: solid blue;
+}
+
+.rectangle {
+  height: 100px;
+  width: 100px;
+  background: slateblue;
+  border: 5px solid black; 
+ /* border-radius: 45% 45% 0 0%; */
+  margin: 20px;
+}
+
+.circle {
+  height: 100px;
+  width: 150px;
+  border-radius: 50%;
+  background: orchid;
+ /* border: 5px solid black;*/
+  margin: 20px;
+}
+
+.round-irregular {
+  height: 100px;
+  width: 100px;
+  border-radius: 10% 66%;
+  background: darkviolet;
+ /* border: 5px solid black;  */
+  margin: 20px;
+}
+
+.triangle-group {
+  height: 0;
+  width: 0;
+  /*border-radius: 50%; 
+  background: purple;*/
+  border-top: 50px solid purple;
+  border-right: 10px solid indigo;
+  border-bottom:  50px solid violet;
+  border-left: 100px solid slateblue;
+  margin: 20px;
+}
+
+.cool-thing-that-happened {
+  height: 100px;
+  width: 100px;
+  border-radius: 10% 66%;
+  background: mediumslateblue;
+  border-top: 50px solid purple;
+  border-right: 50px solid indigo;
+  border-bottom:  50px solid violet;
+  border-left: 50px solid slateblue;
+  margin: 20px;
+}
+
+.triangle-1 {
+  height: 0px;
+  width: 0px;
+  /*border-radius: 50%; 
+  background: purple;*/
+  border-top: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid rebeccapurple;
+  margin: 20px;
+}
+
+.triangle-2 {
+  height: 0px;
+  width: 0px;
+  /*border-radius: 50%; 
+  background: purple;*/
+  border-top: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid darkviolet;
+  border-left: 50px solid transparent;
+  transform: rotate(15deg);
+  margin: 20px;
+}
